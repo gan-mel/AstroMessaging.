@@ -214,17 +214,14 @@ public class DialogLoadDetails extends DialogFragment {
                    // Log.d("Array: "+i, user.get(i).toString());
 
                 if (  user.size() >= 1   )  {
-                    Log.d(TAG, "SIZE MORE THAN 00   " + user.size());
 
                     userOne.setText(user.get(0).getFirst());
 
                     if (user.size() >= 2) {
-                        Log.d(TAG, "SIZE MORE THAN 0   " + user.size());
 
                         userTwo.setText(user.get(1).getFirst());
 
                         if (user.size() >= 3) {
-                            Log.d(TAG, "SIZE MORE THAN 1   " + user.size());
                             userThree.setText(user.get(2).getFirst());
                         }
                     }
