@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":292,"versionName":"2.9.2","enabled":true,"outputFile":"lp_messaging_sdk-debug.aar","fullName":"debug","baseName":"debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.liveperson.messaging.sdk","split":""}}]

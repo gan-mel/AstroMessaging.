@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="infra:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/infra.aar/3574ef76492bdd324c07d8d46611fa0c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/infra.aar/3574ef76492bdd324c07d8d46611fa0c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

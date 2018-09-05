@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 292
+        versionName "2.9.2"
+    }
+
+    defaultConfig {
+        consumerProguardFiles 'proguard.cfg'
+    }
+
+    repositories {
+        flatDir {
+            dirs 'aars'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:26+'
+    compile 'com.android.support:design:26+'
+    compile 'com.android.support:recyclerview-v7:26+'
+    compile 'com.android.support:percent:26+'
+    compile 'com.google.android.gms:play-services-maps:12.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.neovisionaries:nv-websocket-client:1.31'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+
+    compile(name: 'infra', ext: 'aar')
+    compile(name: 'messaging', ext: 'aar')
+    compile(name: 'messaging_ui', ext: 'aar')
+    compile(name: 'ui', ext: 'aar')
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.0.0'
+            }
+        }
+    }
+}

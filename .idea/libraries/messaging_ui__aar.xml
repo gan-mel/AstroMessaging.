@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="messaging_ui:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/messaging_ui.aar/9a3cf7f445ca2653293d3649ea2b5f43/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/messaging_ui.aar/9a3cf7f445ca2653293d3649ea2b5f43/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
